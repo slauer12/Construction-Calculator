@@ -4,6 +4,8 @@ incha = 0
 inchb = 0
 totinch = 0
 
+print('Construction Calculator')
+
 # Printer extracts and prints out solution.
 def printer():
   global length1

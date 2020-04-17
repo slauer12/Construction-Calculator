@@ -1,8 +1,12 @@
 import re
 
+#Pattern = 4'-6" or 4'6"
 regex = re.compile(r'(?P<feet>[0-9]+\')?\-?(?P<inches>[0-9]+")?')
+#Pattern = 4'-6 1/2" or 4'6 1/2"
 regexfrac = re.compile(r'(?P<feet>[0-9]+\')?\-?(?P<inches>[0-9]+ [0-9]+/[0-9]+")?')
+#Pattern = 4'-1/2" or 4'1/2"
 regexonlyfrac = re.compile(r'(?P<feet>[0-9]+\')?\-?(?P<inches>[0-9]+/[0-9]+")?')
+#Pattern = 5.5' or 5.5"
 regexdec = re.compile(r'(?P<feet>[0-9]+.[0-9]+\')?\-?(?P<inches>[0-9]+.[0-9]+\")?')
 
 # Search regex for matches in feet
